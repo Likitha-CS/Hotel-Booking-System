@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking</title>
+</head>
+<body>
+    <h2>Hotel Room Booking Form</h2>
+    <form action="BookingServlet" method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Phone: <input type="text" name="phone" required><br><br>
+        Room Type:
+        <select name="room_type" required>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Suite">Suite</option>
+        </select><br><br>
+        Check-in Date: <input type="date" name="check_in" required><br><br>
+        Check-out Date: <input type="date" name="check_out" required><br><br>
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
